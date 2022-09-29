@@ -1,0 +1,43 @@
+body {
+  background-color: grey;
+  color: white;
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container__title {
+  color: rgb(241, 190, 207);
+  margin: 40px;
+}
+
+.container__box {
+  background-color: rgb(172, 31, 78);
+  width: 400px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+  transform: translateX(100vw);
+  transition: transform 0.4s ease;
+}
+
+.container__box:nth-of-type(even) {
+  transform: translateX(-100vw);
+}
+
+.container__box.show {
+  transform: translateX(0);
+}
+
+.container__box h2 {
+  font-size: 36px;
+}
