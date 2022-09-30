@@ -12,6 +12,7 @@ function checkBoxes() {
 
     if (boxTop < triggerBottom) {
       box.classList.add('show');
+      console.log(box.getBoundingClientRect());
     } else {
       box.classList.remove('show');
     }
